@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff7f4">
+<title>A little note for you</title>
+<style>
+  :root{--ink:#3b2d34;--muted:#76656d;--rose:#b94f71;--pink:#f7dce4;--cream:#fffaf7;--line:#f0dce2}
+  *{box-sizing:border-box} body{margin:0;color:var(--ink);background:radial-gradient(ellipse at 10% 0%,#fce8ed,transparent 40%),linear-gradient(150deg,#fffaf7,#fff3ee);font:16px/1.65 Georgia,'Times New Roman',serif}
+  .wrap{width:min(900px,92%);margin:auto;padding:42px 0 56px}.top{text-align:center;padding:30px 16px 24px}.eyebrow{color:var(--rose);font:600 12px/1.4 system-ui,sans-serif;letter-spacing:.18em;text-transform:uppercase}
+  h1{font-size:clamp(2.5rem,8vw,5rem);line-height:1.02;font-weight:500;margin:15px auto 14px;max-width:720px;letter-spacing:-.04em} .top p{color:var(--muted);max-width:520px;margin:0 auto;font-size:1.08rem}
+  .card{background:rgba(255,255,255,.78);border:1px solid var(--line);border-radius:25px;padding:clamp(22px,5vw,42px);box-shadow:0 16px 48px #8740570d;margin:22px 0}
+  .letter p{margin:0 0 17px}.letter p:last-child{margin:0}.sign{color:var(--rose);font-style:italic;margin-top:25px!important}
+  h2{font-size:1.65rem;line-height:1.2;font-weight:500;margin:0 0 12px}.dreams{display:grid;grid-template-columns:1fr 1fr;gap:14px}.dream{border-radius:18px;padding:22px;background:#fff5f6;border:1px solid #f4e2e7}.dream:nth-child(2){background:#fff8ef;border-color:#f3e8d8}.dream .icon{font-size:1.5rem}.dream h3{font-size:1.2rem;margin:8px 0 5px}.dream p{margin:0;color:var(--muted);font-size:.97rem}
+  .photos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:17px}.photo{aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:linear-gradient(145deg,#fbe5e9,#fff1df);display:grid;place-items:center;color:#987781;text-align:center;padding:14px;border:1px dashed #dfb8c3}.photo img{width:100%;height:100%;object-fit:cover;display:block}.photo span{font:13px/1.4 system-ui,sans-serif}.photo.hidden{display:none}
+  .controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px;font:14px system-ui,sans-serif;color:var(--muted)}button,.upload{border:0;border-radius:999px;background:var(--rose);color:white;padding:11px 17px;font:600 14px system-ui,sans-serif;cursor:pointer;display:inline-block}button:hover,.upload:hover{background:#993c5c}.small{font:13px/1.5 system-ui,sans-serif;color:var(--muted)}
+  .cute-video{padding:0;overflow:hidden;background:#fff4f5;text-align:center}
+  .cute-scene{min-height:250px;position:relative;display:grid;place-items:center;overflow:hidden;background:linear-gradient(180deg,#fce9ee,#fff8e9)}
+  .sun{position:absolute;width:76px;height:76px;border-radius:50%;background:#ffe2a9;right:13%;top:22px;box-shadow:0 0 40px #ffe2a988}
+  .cloud{position:absolute;font-size:40px;opacity:.8;animation:drift 9s ease-in-out infinite alternate}.cloud.one{left:13%;top:35px}.cloud.two{right:23%;top:88px;font-size:30px;animation-delay:-3s}
+  .bear{font-size:82px;z-index:1;animation:bob 2s ease-in-out infinite}.heart{position:absolute;z-index:2;font-size:27px;animation:float 3s ease-in-out infinite}.heart.h1{left:42%;top:30%;color:#d86d91}.heart.h2{right:40%;top:25%;font-size:19px;animation-delay:-1s}.heart.h3{left:58%;top:55%;font-size:16px;animation-delay:-2s}
+  .scene-caption{position:absolute;bottom:18px;z-index:2;font:600 14px system-ui,sans-serif;color:#76505e}
+  @keyframes bob{0%,100%{transform:translateY(3px) rotate(-3deg)}50%{transform:translateY(-8px) rotate(3deg)}}@keyframes float{0%,100%{transform:translateY(8px) scale(.8);opacity:.55}50%{transform:translateY(-12px) scale(1.15);opacity:1}}@keyframes drift{to{transform:translateX(22px)}}
+  @media(prefers-reduced-motion:reduce){.bear,.heart,.cloud{animation:none}}
+  .promise{background:#472f3a;color:#fff8f7;text-align:center}.promise h2{color:#ffe0e8}.promise p{max-width:610px;margin:0 auto;color:#f3dce4}.promise .soft{margin-top:14px;font-size:.92rem;color:#e7cdd6}
+  footer{text-align:center;color:#987d87;font-size:.85rem;padding:18px 10px}
+  @media(max-width:620px){.dreams{grid-template-columns:1fr}.photos{grid-template-columns:repeat(2,1fr)}.photo:last-child{display:none}}
+  @media(prefers-reduced-motion:no-preference){.card{animation:rise .65s ease both}@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="top">
+    <div class="eyebrow">A little note, just for you</div>
+    <h1>You can have more than one dream.</h1>
+    <p>For the days when everything feels a little heavier than usual.</p>
+  </header>
+  <section class="card letter">
+    <p>Hey you,</p>
+    <p>I know you’re working hard on your cabin crew course, and I also know modeling is something you really want to explore. You don’t have to shrink one dream to make room for the other. You’re allowed to build a steady path and still reach for the thing that makes your heart light up.</p>
+    <p>You have your own pace, your own reasons, and your own way of figuring it out. I believe in your ability to choose what feels right for you—and I’ll be cheering you on either way.</p>
+    <p>And about my feelings: I know a page can’t prove love. I can only show you over time—with honesty, patience, respect, and actions that match my words. You never have to believe me before you’re ready. I just hope I can keep earning your trust, one day at a time.</p>
+    <p class="sign">Be gentle with yourself today. I’m in your corner. ♡</p>
+  </section>
+  <section class="card">
+    <h2>Both dreams deserve a little space</h2>
+    <div class="dreams">
+      <article class="dream"><div class="icon">✈️</div><h3>Your cabin crew journey</h3><p>Every lesson and every bit of effort is you moving forward. Take it one step at a time; progress doesn’t need to be loud to count.</p></article>
+      <article class="dream"><div class="icon">✨</div><h3>Your modeling dream</h3><p>You can explore it when and how you choose. Your confidence, individuality, and presence are yours to define.</p></article>
+    </div>
+  </section>
+  <section class="card">
+    <h2>A few moments worth smiling about</h2>
+    <p class="small">Add photos she’s comfortable sharing. They stay in this browser and are not uploaded anywhere.</p>
+    <div class="photos" id="photos" aria-live="polite">
+      <div class="photo"><img src="photos/IMG_2907.jpg" alt="Photo from her runway appearance"></div><div class="photo"><img src="photos/IMG_2908.jpg" alt="Photo from her modeling look"></div><div class="photo"><span>One more smile</span></div>
+    </div>
+    <div class="controls"><label class="upload" for="picker">Choose her photos</label><input id="picker" type="file" accept="image/*" multiple hidden><button id="clear" type="button" style="background:#f2e6e9;color:#664653">Clear photos</button><span id="status" aria-live="polite"></span></div>
+  </section>
+  <section class="card cute-video" aria-label="A cute animated moment">
+    <div class="cute-scene"><div class="sun"></div><div class="cloud one">☁️</div><div class="cloud two">☁️</div><div class="bear" role="img" aria-label="A cute bear">🧸</div><div class="heart h1">♥</div><div class="heart h2">♥</div><div class="heart h3">♥</div><div class="scene-caption">Sending a tiny hug your way ♡</div></div>
+    <p class="small" style="padding:0 18px 16px;margin:12px 0 0">A little looping animated scene, made just to bring a smile.</p>
+  </section>
+  <section class="card promise">
+    <h2>You don’t owe me an answer</h2>
+    <p>I care about you as a person, not as a promise you have to make. Take the time you need. Your comfort and your choices matter to me.</p>
+    <p class="soft">For now, I just hope this gives you a softer moment and reminds you that you’re capable, worthy, and deeply appreciated.</p>
+  </section>
+  <footer>Made with care, for a person who deserves kindness.</footer>
+</main>
+<script>
+const picker=document.getElementById('picker'), gallery=document.getElementById('photos'), status=document.getElementById('status');
+const defaults=gallery.innerHTML, dbName='little-note-gallery', urls=[];
+function openDB(){return new Promise((resolve,reject)=>{const req=indexedDB.open(dbName,1);req.onupgradeneeded=()=>req.result.createObjectStore('photos');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)})}
+async function savePhotos(files){const db=await openDB();return new Promise((resolve,reject)=>{const tx=db.transaction('photos','readwrite'),store=tx.objectStore('photos');store.clear();[...files].slice(0,6).filter(f=>f.type.startsWith('image/')).forEach((file,i)=>store.put({blob:file,name:file.name},i));tx.oncomplete=()=>{db.close();resolve()};tx.onerror=()=>{db.close();reject(tx.error)}})}
+async function readPhotos(){const db=await openDB();return new Promise((resolve,reject)=>{const req=db.transaction('photos').objectStore('photos').getAll();req.onsuccess=()=>{db.close();resolve(req.result)};req.onerror=()=>{db.close();reject(req.error)}})}
+function showSaved(records){urls.forEach(URL.revokeObjectURL);urls.length=0;gallery.replaceChildren();records.forEach((item,i)=>{const box=document.createElement('div');box.className='photo';const img=document.createElement('img');img.alt=item.name||`Photo ${i+1}`;img.src=URL.createObjectURL(item.blob);urls.push(img.src);box.append(img);gallery.append(box)});status.textContent=`${records.length} photo(s) saved in this browser.`}
+picker.addEventListener('change',async()=>{const files=[...picker.files].filter(f=>f.type.startsWith('image/')).slice(0,6);if(!files.length)return;try{await savePhotos(files);showSaved(await readPhotos())}catch{status.textContent='Could not save these photos. Try fewer or smaller images.'}});
+document.getElementById('clear').addEventListener('click',async()=>{picker.value='';try{const db=await openDB();await new Promise((resolve,reject)=>{const tx=db.transaction('photos','readwrite');tx.objectStore('photos').clear();tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)});db.close();urls.forEach(URL.revokeObjectURL);urls.length=0;gallery.innerHTML=defaults;status.textContent='Saved photos cleared.'}catch{status.textContent='Could not clear saved photos.'}});
+readPhotos().then(items=>{if(items.length)showSaved(items)}).catch(()=>{});
+</script>
+</body>
+</html>
